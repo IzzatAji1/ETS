@@ -56,7 +56,7 @@
                                         <div class="col mr-2">
                                             <div  class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 EUR GBP</div>
-                                            <div  class="h5 mb-0 font-weight-bold text-gray-800">156</div>
+                                            <div  class="h5 mb-0 font-weight-bold text-gray-800">0.867262</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -74,7 +74,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 GBP USD</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">64.89%</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">1.2124</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -92,7 +92,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 USD JPY</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">149.560385</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -113,7 +113,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 AUD USD</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">278</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">0.682211</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -131,7 +131,7 @@
                                         <div class="col mr-2">
                                             <div  class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 USD CHF</div>
-                                            <div  class="h5 mb-0 font-weight-bold text-gray-800">156</div>
+                                            <div  class="h5 mb-0 font-weight-bold text-gray-800">0.904157</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -149,7 +149,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 NZD USD</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">64.89%</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">0.5888</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -167,7 +167,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 USD CAD</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">1.36685</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -188,7 +188,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 USD ZAR</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">278</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">19.007304</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -211,7 +211,7 @@
 
                 if (response.status === 200) {
                     const data = await response.json();
-                    displayStations(data);
+                    displaycurrencies(data);
                 } else {
                     console.error('Gagal mengambil data dari API');
                 }
@@ -220,7 +220,7 @@
             }
         }
 
-        function displayStations(uang) {
+        function displaycurrencies(uang) {
             const currencyList = document.getElementById('EURUSD');
             //const asalKotaList = document.getElementById('asal-kota-list');
 
@@ -237,6 +237,27 @@
         fetchData();
 </script>
 
+
+
+    
+ <!-- Bootstrap core JavaScript-->
+ <script src="vendor/jquery/jquery.min.js"></script>
+ <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Core plugin JavaScript-->
+ <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+ <!-- Custom scripts for all pages-->
+ <script src="C:\startbootstrap-sb-admin-2-gh-pages (1)\startbootstrap-sb-admin-2-gh-pages\js\sb-admin-2.js"></script>
+
+ <!-- Page level plugins -->
+ <script src="vendor/chart.js/Chart.min.js"></script>
+
+ <!-- Page level custom scripts -->
+ <script src="js/demo/chart-area-demo.js"></script>
+ <script src="js/demo/chart-pie-demo.js"></script>
+</body>
+</html>
 
 
     
